@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./Font Awesome/Font Awesome Pro v5.12.0/css/all.css">
-</head>
-<body>
-
-    <header>
-        <h1>Northeast Car Care<i class="fad fa-tools"></i></h1>
-        <nav>
-            <ul>
-                <li><a href="./customerhome.html">Home <i class="fad fa-home-lg"></i>
-                    </a></li>
-                <li><a href="#">Services <i class="fad fa-car"></i></a></li>
-                <li><a href="#">Boocking <i class="fad fa-clipboard-list-check"></i></a></li>
-                <li><a href="#">Log Out <i class="fad fa-sign-out-alt"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="homemain">
-        <div class="homehero1">
-            <div class="welcome">
-                <div class="welcome1">
-                    <h3>Welcome <i class="fad fa-grin-stars"></i></h3>
-                </div>
-
-                <div class="welcome2">
-                    <h3>Auto service that</h3>
-                    <h3>You can trust!</h3>
-                    <h3>Have a great Day.</h3>
-                    <button class="getstartedBTN"><a href="#">Get Started <i class="fad fa-check"></i></a></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="homehero2">
-            <img src="./Img/pngegg (2).png" alt="">
-        </div>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./Font Awesome/Font Awesome Pro v5.12.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="./customerhome.html" class="active"
+        >Home <i class="fad fa-home-lg"></i
+      ></a>
+      <a href="./customerservices.html">Services <i class="fad fa-car"></i></a>
+      <a href="./customerBooking.html"
+        >Booking <i class="fad fa-clipboard-list-check"></i
+      ></a>
+      <a href="./customerNotification.html"
+        >Notification <i class="fad fa-bell"></i
+      ></a>
+      <a href="./index.html">Log Out <i class="fad fa-sign-out-alt"></i></a>
+      <a
+        href="javascript:void(0);"
+        id="icon"
+        class="icon"
+        onclick="myFunction()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
-</body>
+    <div class="homemain">
+      <div class="homehero1">
+        <div class="welcome">
+          <div class="welcome1">
+            <h3>Welcome <i class="fad fa-grin-stars"></i></h3>
+          </div>
+
+          <div class="welcome2">
+            <h3>Auto service that</h3>
+            <h3>You can trust!</h3>
+            <h3>Have a great Day.</h3>
+            <button class="getstartedBTN">
+              <a href="#">Get Started <i class="fad fa-check"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="homehero2">
+        <img src="./assets/images/pngegg (2).png" alt="" />
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
 </html>

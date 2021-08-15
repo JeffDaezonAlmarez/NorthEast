@@ -14,48 +14,60 @@
   <body>
     <div class="registerbox">
       <div class="regcountainer">
-        <div class="registerhero1">
-          <h1>Sign Up <i class="fad fa-users"></i></h1>
-          <button class="signinBTN">
-            <a href="./index.html">Sign In</a>
-            <i class="fad fa-sign-in-alt"></i>
-          </button>
+
+        <div class="heroreg1">
+          <img src="./assets/images/undraw_online_ad_re_ol62.svg" alt="">
         </div>
 
-        <div class="registerhero2">
-          <form action="" id="registrationForm" method="POST">
-                <label for="Fullname"><i class="fad fa-user"></i> Fullname:</label>
-                <input class="input" type="text" id="FullName" placeholder="Name ex.(Jeff Almarez)" required />
-                
-                <label for="Gender"><i class="far fa-venus-mars"></i> Gender:</label>
-                <select name="Gender" id="Gender">
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                </select>
+        <div class="heroreg2">
+          <div class="registerhero1">
+            <h1>Sign Up <i class="fad fa-users"></i></h1>
+            <button class="signinBTN">
+              <a href="./index.html">Sign In</a>
+              <i class="fad fa-sign-in-alt"></i>
+            </button>
+          </div>
+  
+          <div class="registerhero2">
+            <form action="" id="registrationForm" method="POST">
+                  <label for="Fullname"><i class="fad fa-user"></i> Fullname:</label>
+                  <input class="input" type="text" id="FullName" placeholder="Name ex.(Jeff Almarez)" required />
+                  
+                  <label for="Gender"><i class="far fa-venus-mars"></i> Gender:</label>
+                  <select name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+  
+                  <label for="Address"
+                    ><i class="fad fa-map-marker-alt"></i> Address:</label
+                  >
+                  <input class="input" type="text" id="Address" required/>
+  
+                  <label for="Age"><i class="fab fa-gratipay"></i> Age:</label>
+                  <input class="input" type="number" id="Age" min="18" required/>
+                  
+                  <label for="ContactNumber"
+                    ><i class="fad fa-mobile-alt"></i> Contact Number:</label
+                  >
+                  <input class="input" type="number" placeholder="(Optinal)" id="ContactNumber"/>
+  
+                  <label for="Email"
+                    ><i class="fad fa-envelope-open-text"></i> Email:</label
+                  >
+                  <input class="input" type="email" id="Email" required/>
+  
+                  <label for="Password"><i class="fad fa-lock-alt"></i> Password:</label>
+                  <input class="input" type="password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></input>
 
-                <label for="Address"
-                  ><i class="fad fa-map-marker-alt"></i> Address:</label
-                >
-                <input class="input" type="text" id="Address" required/>
-
-                <label for="Age"><i class="fab fa-gratipay"></i> Age:</label>
-                <input class="input" type="number" id="Age" min="18" required/>
-                
-                <label for="ContactNumber"
-                  ><i class="fad fa-mobile-alt"></i> Contact Number:</label
-                >
-                <input class="input" type="number" placeholder="(Optinal)" id="ContactNumber"/>
-
-                <label for="Email"
-                  ><i class="fad fa-envelope-open-text"></i> Email:</label
-                >
-                <input class="input" type="email" id="Email" required/>
-
-                <label for="Password"><i class="fad fa-lock-alt"></i> Password:</label>
-                <input class="input" type="password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></input>
-
-                <input class="Submitbtn" name="submit" class="" type="submit" value="Register" id="Submitbtn">
-          </form>
+                  <div class="accept">
+                    <input type="checkbox" required>
+                    <p>I agree to the <a href="./Terms and Condition.html">Terms and Condition</a></p>
+                  </div>
+  
+                  <input class="Submitbtn" name="submit" class="" type="submit" value="Register" id="Submitbtn">
+            </form>
+          </div>
         </div>
       </div>
     </div>
